@@ -1,0 +1,31 @@
+footer {
+  background: url(../img/header-bg.jpg) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px; }
+  footer .lockup {
+    padding: 50px 30px;
+    clear: both; }
+    footer .lockup .logo {
+      width: 50px;
+      height: 50px;
+      float: left;
+      margin-right: 30px; }
+      footer .lockup .logo circle {
+        fill: rgba(0, 0, 0, 0.4); }
+    footer .lockup .content-wrap {
+      float: left; }
+      footer .lockup .content-wrap .copyright {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.4); }
+      footer .lockup .content-wrap a {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.7);
+        display: inline-block;
+        margin-right: 30px; }
+        footer .lockup .content-wrap a:hover {
+          color: rgba(0, 0, 0, 0.7); }
