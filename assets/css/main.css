@@ -902,10 +902,6 @@ h3 {
   .clients-belt .client-unit {
     max-width: 750px;
     margin: 0 0 50px -375px;
-    /*display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;*/
     position: absolute;
     top: 0px;
     right: null;
@@ -916,7 +912,7 @@ h3 {
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;}
     .clients-belt .client-unit .client-face {
       min-width: 300px;
       text-align: center; }
@@ -1007,6 +1003,7 @@ h3 {
     left: 10px;
     color: #c99065;
     cursor: pointer; }
+
 
 /*** Contact page CSS ***/
 .fa-envelope, .fa-github, .fa-linkedin-square, .fa-google, .fa-facebook {

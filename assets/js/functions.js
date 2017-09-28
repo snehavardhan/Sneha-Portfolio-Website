@@ -49,17 +49,43 @@ function workLoad(){
 
 function clientStuff() {
   $('.client-unit').first().addClass('active-client');
+  //--------------Code to insert client logos----------------
+  // $('.client-logo').first().addClass('active-client');
 
-  $('.client-control-next').click(function() {
-    console.log("asasfasdfwertgdfbsghehtry5yufghdfh");
-    alert("hi");
-  });
+  // $('.client-logo').click(function(){
   //   var $this = $(this),
-  //       curActiveClient = $('.clients-belt').find('.active-client'),
-  //       position = $('.clients-belt').children().index(curActiveClient),
-  //       clientNum = $('.client-unit').length;
+  //       $siblings = $this.parent().children(),
+  //       position = $siblings.index($this);
   //
-
-  //       $('.active-client').removeClass('active-client').next().addClass('active-client');
+  //   $('.client-unit').removeClass('active-client').eq(position).addClass('active-client');
+  //   $siblings.removeClass('active-client');
+  //   $this.addClass('active-client');
   // });
+
+  $('.client-control-next, .client-control-prev').click(function() {
+        var $this = $(this),
+            curActiveClient = $('.clients-belt').find('.active-client'),
+            position = $('.clients-belt').children().index(curActiveClient),
+            clientNum = $('.client-unit').length;
+
+        if($this.hasClass('client-control-next')){
+          if(position < clientNum-1) {
+            $('.active-client').removeClass('active-client').next().addClass('active-client');
+          } else {
+            $('.client-unit').removeClass('active-client').first().addClass('active-client');
+            // $('.client-unit').removeClass('active-client').first().addClass('active-client');
+          }
+        } else {
+          if(position == 0) {
+            $('.client-unit').removeClass('active-client').last().addClass('active-client');
+            // $('.client-unit').removeClass('active-client').last().addClass('active-client');
+          } else {
+            $('.active-client').removeClass('active-client').prev().addClass('active-client');
+          }
+
+
+        }
+
+
+  });
 }
