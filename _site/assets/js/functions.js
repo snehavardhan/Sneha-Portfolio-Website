@@ -6,7 +6,25 @@ $( document ).ready(function() {
   workLoad();
   clientStuff();
 
+  window.onscroll = function(){
+    scrollFunction()
+  };
+
 });
+
+function scrollFunction(){
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementById("backBtn").style.display = "block";
+  } else {
+    document.getElementById("backBtn").style.display = "none";
+  }
+}
+
+function topFunction(){
+
+  document.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 
 function smoothScroll(duration){
   $('a[href^="#"]').on('click', function(event){
