@@ -463,7 +463,7 @@ body {
 
 /**** Adding new styles from here - Sneha ****/
 header {
-  background: url(../img/headerCode.PNG) center center;
+  background: url(/assets/img/headerCode.PNG) center center;
   background-size: cover;
   height: 450px;
   padding-bottom: 50px; }
